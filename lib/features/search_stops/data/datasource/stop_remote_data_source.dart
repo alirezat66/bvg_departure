@@ -23,12 +23,8 @@ class StopRemoteDataSource {
     bool addresses = false,
     int limit = 10,
   }) async {
-    final trimmedQuery = query.trim();
-    if (trimmedQuery.isEmpty) return const Success<List<Stop>>([]);
 
-    final key = 'search:$trimmedQuery:$poi:$addresses:$limit';
-
-    // Check cache first (unless force refresh is requested)
+    final key = 'search:$query:$poi:$addresses:$limit';
     if (!forceRefresh) {
       final cached = _cache.read(key);
       if (cached != null) return Success<List<Stop>>(cached);
@@ -36,7 +32,7 @@ class StopRemoteDataSource {
 
     try {
       final result = await _searchInIsolate(
-        query: trimmedQuery,
+        query: key,
         poi: poi,
         addresses: addresses,
         limit: limit,
