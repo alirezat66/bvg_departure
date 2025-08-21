@@ -1,0 +1,127 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/coverage/
+.dart_tool/
+.packages
+.buildlog/
+.flutter-plugins
+.flutter-plugins-dependencies
+.flutter_export_environment.sh
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# FVM Version Cache
+.fvm/
+
+# App build outputs
+build/
+
+
+# IntelliJ / Android Studio
+*.iml
+.idea/
+.android/
+# VS Code (keep settings if you prefer; otherwise ignore the whole folder)
+.vscode/
+
+# Android
+android/.gradle/
+android/captures/
+android/local.properties
+android/key.properties
+android/app/**.keystore
+android/app/**.jks
+android/**/GeneratedPluginRegistrant.java
+android/app/intermediates/
+android/app/outputs/
+
+# iOS
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Flutter.podspec
+ios/Flutter/Generated.xcconfig
+ios/Flutter/ephemeral/
+ios/Flutter/App.framework
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.pbc*
+ios/Runner/GeneratedPluginRegistrant.*
+ios/build/
+# Xcode user data & derived data
+ios/Runner.xcodeproj/project.xcworkspace/
+ios/Runner.xcworkspace/
+ios/Runner.xcodeproj/xcuserdata/
+ios/Runner.xcworkspace/xcuserdata/
+DerivedData/
+
+# macOS
+macos/Flutter/ephemeral/
+macos/Flutter/GeneratedPluginRegistrant.swift
+macos/Pods/
+macos/build/
+macos/Runner.xcworkspace/
+macos/Runner.xcodeproj/xcuserdata/
+macos/Runner.xcworkspace/xcuserdata/
+
+# Windows
+windows/flutter/ephemeral/
+windows/runner/Debug/
+windows/runner/Release/
+windows/runner/*/     # any other build configs
+
+# Linux
+linux/flutter/ephemeral/
+linux/build/
+
+# Web (only build artifacts)
+# (Do NOT ignore web/** source files)
+# web/**.g.dart  # if you ever generate web code
+# Service worker caches
+.dart_tool/ssc/
+
+# Firebase / Crashlytics (if added later)
+# **/*.plist        # don’t ignore project plists globally; add per-file rules if needed
+# google-services.json
+# GoogleService-Info.plist
+
+*.lock.hive
+*.log
