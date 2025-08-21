@@ -19,7 +19,16 @@ ThemeData buildLightAppTheme() {
     appBarTheme: appBarTheme(semanticColors),
     searchBarTheme: searchBarTheme(semanticColors),
     inputDecorationTheme: inputDecorationTheme(semanticColors),
+    dividerTheme: dividerTheme(semanticColors),
     extensions: [semanticColors, AppSpacing.light, AppShape.light],
+  );
+}
+
+DividerThemeData dividerTheme(SemanticColors semanticColors) {
+  return DividerThemeData(
+    color: semanticColors.borderSecondary,
+    thickness: 1,
+    space: 0,
   );
 }
 
