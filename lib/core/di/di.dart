@@ -1,7 +1,7 @@
 import 'package:bvg_departures/core/network/cache/cache.dart';
 import 'package:bvg_departures/core/network/cache/memory_cache.dart';
 import 'package:bvg_departures/core/network/dio_client.dart';
-import 'package:bvg_departures/features/departures/cubit/departure_cubit.dart';
+import 'package:bvg_departures/features/departures/presentation/cubit/departure_cubit.dart';
 import 'package:bvg_departures/features/departures/data/data_source/departure_remote_data_source.dart';
 import 'package:bvg_departures/features/departures/data/repository/departure_repository_impl.dart';
 import 'package:bvg_departures/features/departures/domain/repository/departure_repository.dart';
