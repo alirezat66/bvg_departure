@@ -2,7 +2,6 @@ import 'package:bvg_departures/core/data/consts/texts.dart';
 import 'package:bvg_departures/core/data/extention/date_extension.dart';
 import 'package:bvg_departures/core/presentation/theme/context_theme_extension.dart';
 import 'package:bvg_departures/features/departures/domain/entities/departure.dart';
-import 'package:bvg_departures/features/departures/presentation/view/widgets/departure_tile.dart';
 import 'package:flutter/material.dart';
 
 class DepartureTimeInfoWidget extends StatelessWidget {
