@@ -14,7 +14,28 @@ ThemeData buildLightAppTheme() {
     colorScheme: scheme,
     textTheme: appTextTheme,
     scaffoldBackgroundColor: scheme.surface,
-
+    iconButtonTheme: iconButtonThemeData(semanticColors),
     extensions: [semanticColors, AppSpacing.light, AppShape.light],
+  );
+}
+
+IconButtonThemeData iconButtonThemeData(SemanticColors semanticColors) {
+  return IconButtonThemeData(
+    style: ButtonStyle(
+      minimumSize: const WidgetStatePropertyAll(Size(48, 48)),
+      iconSize: const WidgetStatePropertyAll(24),
+      foregroundColor: WidgetStateProperty.resolveWith((states) {
+        if (states.contains(WidgetState.pressed)) {
+          return semanticColors.interactionSecondaryPressed;
+        }
+        if (states.contains(WidgetState.hovered)) {
+          return semanticColors.interactionSecondaryHovered;
+        }
+        if (states.contains(WidgetState.focused)) {
+          return semanticColors.interactionSecondaryFocused;
+        }
+        return semanticColors.fgPrimary;
+      }),
+    ),
   );
 }
