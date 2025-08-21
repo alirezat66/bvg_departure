@@ -1,12 +1,12 @@
 import 'package:bvg_departures/core/data/error/app_failure.dart';
 import 'package:bvg_departures/core/data/result/result.dart';
-import 'package:bvg_departures/features/search_stops/data/datasource/stop_remote_data_source.dart';
+import 'package:bvg_departures/features/search_stops/data/data_source/stop_remote_data_source.dart';
 import 'package:bvg_departures/features/search_stops/domain/entity/stop.dart';
 import 'package:bvg_departures/features/search_stops/domain/repository/stop_repository.dart';
 
 class StopRepositoryImpl implements StopRepository {
   final StopRemoteDataSource _remote;
-  StopRepositoryImpl({required StopRemoteDataSource remote}) : _remote = remote;
+  StopRepositoryImpl(StopRemoteDataSource remote) : _remote = remote;
   @override
   Future<Result<List<Stop>>> searchStops(String query) {
     final trimmedQuery = query.trim();
