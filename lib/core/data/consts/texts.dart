@@ -18,3 +18,12 @@ const emptyQuery = 'Start typing to search for stops';
 const stopsLoadingText = 'Searching for stops...';
 const stopsErrorText = 'Error occurred while searching';
 const emptyResultText = "We couldn't find any results";
+
+const departureEmptyText = 'No departures available';
+const departureEmptyDescription = 'Try refreshing or check back later';
+
+
+
+final delayText = 'delayed';
+final onTimeText = 'on-time';
+final cancelledText = 'cancelled';

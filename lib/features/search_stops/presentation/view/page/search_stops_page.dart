@@ -1,10 +1,11 @@
-import 'package:bvg_departures/core/di/di.dart';
+import 'package:bvg_departures/core/presentation/router/router.dart';
 import 'package:bvg_departures/core/presentation/theme/context_theme_extension.dart';
 import 'package:bvg_departures/features/search_stops/presentation/view/views/idle_view.dart';
 import 'package:bvg_departures/features/search_stops/presentation/view/views/search_delegate/search_stops_delegate.dart';
 import 'package:bvg_departures/gen/assets.gen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:go_router/go_router.dart';
 
 class SearchStopsPage extends StatelessWidget {
   const SearchStopsPage({super.key});
@@ -20,8 +21,17 @@ class SearchStopsPage extends StatelessWidget {
         shadowColor: Colors.transparent,
         toolbarHeight: 56 + 48,
         title: GestureDetector(
-          onTap: () {
-            showSearch(context: context, delegate: SearchStopsDelegate());
+          onTap: () async {
+            final result = await showSearch(
+              context: context,
+              delegate: SearchStopsDelegate(),
+            );
+            if (result != null && context.mounted) {
+              context.push(
+                AppRouteName.departuresPath(result.id),
+                extra: result,
+              );
+            }
           },
           child: SearchBar(
             hintText: 'Search for station',

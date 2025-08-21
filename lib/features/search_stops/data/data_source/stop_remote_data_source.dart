@@ -1,10 +1,10 @@
 import 'dart:isolate';
 
 import 'package:bvg_departures/core/data/error/app_failure.dart';
+import 'package:bvg_departures/core/data/model/stop_model.dart';
 import 'package:bvg_departures/core/data/result/result.dart';
 import 'package:bvg_departures/core/network/cache/cache.dart';
 import 'package:bvg_departures/core/network/error_mapper.dart';
-import 'package:bvg_departures/features/search_stops/data/models/stop_model.dart';
 import 'package:bvg_departures/features/search_stops/domain/entity/stop.dart';
 import 'package:dio/dio.dart';
 

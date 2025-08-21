@@ -1,5 +1,5 @@
+import 'package:bvg_departures/core/data/model/location_model.dart';
 import 'package:bvg_departures/core/data/model/product.dart';
-import 'package:bvg_departures/features/search_stops/data/models/location_model.dart';
 import 'package:bvg_departures/features/search_stops/domain/entity/stop.dart';
 import 'package:json_annotation/json_annotation.dart';
 
