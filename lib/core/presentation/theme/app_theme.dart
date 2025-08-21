@@ -18,6 +18,7 @@ ThemeData buildLightAppTheme() {
     iconButtonTheme: iconButtonThemeData(semanticColors),
     appBarTheme: appBarTheme(semanticColors),
     searchBarTheme: searchBarTheme(semanticColors),
+    inputDecorationTheme: inputDecorationTheme(semanticColors),
     extensions: [semanticColors, AppSpacing.light, AppShape.light],
   );
 }
@@ -39,6 +40,27 @@ IconButtonThemeData iconButtonThemeData(SemanticColors semanticColors) {
         }
         return semanticColors.fgPrimary;
       }),
+    ),
+  );
+}
+
+InputDecorationTheme inputDecorationTheme(SemanticColors semanticColors) {
+  return InputDecorationTheme(
+    isDense: true,
+    filled: true,
+    fillColor: semanticColors.bgPrimary,
+    border: InputBorder.none,
+    enabledBorder: InputBorder.none,
+    focusedBorder: InputBorder.none,
+    errorBorder: InputBorder.none,
+    focusedErrorBorder: InputBorder.none,
+    contentPadding: EdgeInsets.zero,
+
+    hintStyle: appTextTheme.bodyLarge?.copyWith(
+      color: semanticColors.fgTertiary,
+    ),
+    labelStyle: appTextTheme.bodyLarge?.copyWith(
+      color: semanticColors.fgTertiary,
     ),
   );
 }
