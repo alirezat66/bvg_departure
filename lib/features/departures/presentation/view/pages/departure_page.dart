@@ -3,6 +3,7 @@ import 'package:bvg_departures/core/presentation/theme/context_theme_extension.d
 import 'package:bvg_departures/core/presentation/widgets/error_view.dart';
 import 'package:bvg_departures/core/presentation/widgets/loading_view.dart';
 import 'package:bvg_departures/features/departures/presentation/view/views/departure_empty_view.dart';
+import 'package:bvg_departures/features/departures/presentation/view/views/departure_list_view.dart';
 import 'package:bvg_departures/gen/assets.gen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
@@ -41,9 +42,11 @@ class DeparturePage extends StatelessWidget {
               DepartureStatus.loaded =>
                 state.departures.isEmpty
                     ? DepartureEmptyView()
-                    : Text(
-                        "Departures for $stopName",
-                        style: context.textTheme.bodyLarge,
+                    : DepartureListView(
+                        departures: state.departures,
+                        onRefresh: () => context
+                            .read<DepartureCubit>()
+                            .loadDepartures(stopId),
                       ),
               DepartureStatus.error => ErrorView(
                 errorText: state.failure?.toString(),
