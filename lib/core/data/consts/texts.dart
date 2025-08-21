@@ -13,3 +13,8 @@ const idleHighLight2 = 'Intelligentsia asymmetrical stumptown';
 const idleHighLightDescription2 =
     'Chicharrones DIY 8-bit gluten-free. Vibecession palo santo pickled fashion axe '
     'skateboard hoodie vaporwave vegan lumbersexual. Mumblecore celiac schlitz.';
+
+const emptyQuery = 'Start typing to search for stops';
+const stopsLoadingText = 'Searching for stops...';
+const stopsErrorText = 'Error occurred while searching';
+const emptyResultText = "We couldn't find any results";

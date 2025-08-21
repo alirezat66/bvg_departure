@@ -130,6 +130,8 @@ class SemanticColors extends ThemeExtension<SemanticColors> {
     );
   }
 
+  get textPrimary => null;
+
   @override
   SemanticColors copyWith() => this;
   @override

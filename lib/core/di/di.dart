@@ -12,7 +12,7 @@ import 'package:get_it/get_it.dart';
 final getIt = GetIt.instance;
 
 Future<void> setupDI() async {
-  final dioClient = DioClient('https://api.example.com');
+  final dioClient = DioClient('https://v6.bvg.transport.rest');
   getIt.registerSingleton<DioClient>(dioClient);
 
   _setupSearchStops();
