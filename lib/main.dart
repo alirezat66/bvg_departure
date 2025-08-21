@@ -6,7 +6,6 @@ import 'package:bvg_departures/core/presentation/bloc/bloc_observer.dart';
 import 'package:bvg_departures/core/presentation/router/router.dart';
 import 'package:bvg_departures/core/presentation/theme/app_theme.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 void main() {
   runZonedGuarded(
