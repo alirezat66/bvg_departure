@@ -1,0 +1,29 @@
+const idleTitle = 'Find the best public transport connections';
+const idleTitleDescription =
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
+    'Suspendisse varius enim in eros elementum tristique.';
+
+const idleHighLight = 'Cupping aesthetic chambray';
+const idleHighLightDescription =
+    'Intelligentsia asymmetrical stumptown banh mi, bodego boys ugh pop-up 90\'s cardigan '
+    'tonx humblebrag DIY. Chicharrones DIY 8-bit gluten-free. Vibecession palo santo pickled '
+    'fashion axe skateboard hoodie vaporwave vegan lumbersexual. Mumblecore celiac…';
+
+const idleHighLight2 = 'Intelligentsia asymmetrical stumptown';
+const idleHighLightDescription2 =
+    'Chicharrones DIY 8-bit gluten-free. Vibecession palo santo pickled fashion axe '
+    'skateboard hoodie vaporwave vegan lumbersexual. Mumblecore celiac schlitz.';
+
+const emptyQuery = 'Start typing to search for stops';
+const stopsLoadingText = 'Searching for stops...';
+const stopsErrorText = 'Error occurred while searching';
+const emptyResultText = "We couldn't find any results";
+
+const departureEmptyText = 'No departures available';
+const departureEmptyDescription = 'Try refreshing or check back later';
+
+
+
+final delayText = 'delayed';
+final onTimeText = 'on-time';
+final cancelledText = 'cancelled';
