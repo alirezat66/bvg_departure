@@ -2,7 +2,12 @@
 
 ## 🚀 Project Overview
 
-**BVG Departures** is a sophisticated Flutter mobile application designed to provide real-time public transportation information for Berlin's public transport system (BVG). The app enables users to search for stops, view departure times, and get detailed information about various transportation modes including buses, trams, subways, and regional trains.
+**BVG Departures** is a sophisticated Flutter mobile application designed to provide real-time public transportation information for Berlin's public transport system (BVG). The app enables users to search for stops, view departure times, and get detailed information about various transportation modes including buses, trams, subways, and regional trains. implementation time takes 3H and 8 Minutes and refactoring takes 20 minutes. with making decisions it would takes around 4 hours but development time based on my clockify shows 3:18:08
+
+## 📚 Additional Resources
+This document focuses on the technical implementation, architecture, and code quality of the BVG Departures project.
+If you're interested in understanding my personal development journey, the challenges I faced, time management, and my decision-making process throughout this project, please refer to:
+**[My Development Journey](DEVELOPMENT_JOURNEY.md)**
 
 ## Some Info About the Project
 
@@ -10,7 +15,7 @@
 [![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutter.dev/)
 
 ## Demo
-<img src="https://drive.google.com/uc?export=download&id=1DIitgCTgPMxci891LGHjE-yJ_UEUX2TT" alt="finalVideo" style="max-height: 150px;">
+![finalVideo](https://drive.google.com/uc?export=download&id=1DIitgCTgPMxci891LGHjE-yJ_UEUX2TT)
 
 ### 🎯 Key Features
 - **Smart Stop Search**: Real-time search functionality with debounced input and intelligent caching
