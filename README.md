@@ -11,7 +11,7 @@
 
 ## Demo
 
-![finalVideo](https://drive.google.com/file/d/1DIitgCTgPMxci891LGHjE-yJ_UEUX2TT/view?usp=sharing)
+![finalVideo](https://drive.google.com/file/d/1DIitgCTgPMxci891LGHjE-yJ_UEUX2TT)
 
 ### 🎯 Key Features
 - **Smart Stop Search**: Real-time search functionality with debounced input and intelligent caching
