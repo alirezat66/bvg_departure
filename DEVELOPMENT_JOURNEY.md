@@ -108,7 +108,11 @@ I built:
 
 ### 🎬 Fix Theming
 After first run I saw I have problem with app bar theme in search delegate.
+
+
 ![Second Run](https://drive.google.com/uc?export=download&id=1CCKqbiOsukMQIgL1ZmrmkrgvCNZw__Jn)
+
+### 🎬 Fix Theming 2
 I fixed it then I had  Search interaction kicks in  
 ![Third Run](https://drive.google.com/uc?export=download&id=1YycHGaR-TLZk3JrIWZU1sMIp_S5ammwN)
 
@@ -116,6 +120,7 @@ I fixed it then I had  Search interaction kicks in
 ### 🎬 Complete UI
 
 Then It was time to implement the tile, I made decision first to use **ListTile** but when I watched test video, I found it is another tricky point, the leading aligned to top, but it is not possible with tile, at least I had no time to test it with tile first, so I made my StopTile. 
+
 ![Forth Run](https://drive.google.com/uc?export=download&id=1rKqJXXWVXO1A9aJdWBZwpWhIVcF1Df0T)
 
 now everything looking clear
