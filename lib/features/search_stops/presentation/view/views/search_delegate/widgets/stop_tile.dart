@@ -20,7 +20,7 @@ class StopTiles extends StatelessWidget {
           vertical: context.spacing.s12,
         ),
         child: Row(
-          crossAxisAlignment: CrossAxisAlignment.start, 
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             SvgPicture.asset(
               Assets.icons.exploreNearby,
@@ -29,34 +29,27 @@ class StopTiles extends StatelessWidget {
 
             SizedBox(width: context.spacing.s12),
             Expanded(
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                spacing: context.spacing.s4,
                 children: [
-                  Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      spacing: context.spacing.s4,
-                      children: [
-                        Text(stop.name, style: context.textTheme.titleSmall),
-                        Row(
-                          spacing: 4,
-                          children: stop.products
-                              .map(
-                                (e) => SvgPicture.asset(
-                                  e.assetPath,
-                                  width: context.spacing.s16,
-                                  height: context.spacing.s16,
-                                ),
-                              )
-                              .toList(),
-                        ),
-                      ],
-                    ),
+                  Text(stop.name, style: context.textTheme.titleSmall),
+                  Row(
+                    spacing: 4,
+                    children: stop.products
+                        .map(
+                          (e) => SvgPicture.asset(
+                            e.assetPath,
+                            width: context.spacing.s16,
+                            height: context.spacing.s16,
+                          ),
+                        )
+                        .toList(),
                   ),
-                  SvgPicture.asset(Assets.icons.chevronRight),
                 ],
               ),
             ),
+            SvgPicture.asset(Assets.icons.chevronRight),
           ],
         ),
       ),
