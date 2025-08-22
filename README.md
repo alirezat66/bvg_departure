@@ -11,7 +11,7 @@
 
 ## Demo
 
-![myfile](https://github.com/alirezat66/bvg_departure/blob/main/assets/demo.gif)
+![finalVideo](http://github.com/alirezat66/bvg_departure/blob/feature/make_documents/assets/videos/final_version.gif)
 
 ### 🎯 Key Features
 - **Smart Stop Search**: Real-time search functionality with debounced input and intelligent caching
