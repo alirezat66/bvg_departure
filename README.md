@@ -10,7 +10,7 @@
 [![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutter.dev/)
 
 ## Demo
-<img src="https://drive.google.com/uc?export=download&id=1DIitgCTgPMxci891LGHjE-yJ_UEUX2TT" alt="finalVideo" style="max-height: 300px;">
+<img src="https://drive.google.com/uc?export=download&id=1DIitgCTgPMxci891LGHjE-yJ_UEUX2TT" alt="finalVideo" style="max-height: 150px;">
 
 ### 🎯 Key Features
 - **Smart Stop Search**: Real-time search functionality with debounced input and intelligent caching
